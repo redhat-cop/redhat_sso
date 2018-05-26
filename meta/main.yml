@@ -1,0 +1,18 @@
+---
+galaxy_info:
+  author: Red Hat Consulting
+  description: Role for Red Hat Single Sign On (SSO)
+  company: Red Hat
+  license: license (Apache)
+  min_ansible_version: 2.2
+  platforms:
+   - name: EL
+     versions:
+     - 7
+     - 6
+  categories:
+   - java
+   - jboss
+   - sso
+dependencies:
+- { role: sabre1041.redhat-csp-download }

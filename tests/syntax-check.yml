@@ -1,0 +1,5 @@
+- hosts: redhat_sso_centos_hosts
+  gather_facts: false
+  roles:
+   - redhat-cop.jboss_eap
+   - redhat_sso
