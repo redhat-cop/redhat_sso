@@ -1,2 +1,12 @@
 ---
-# tasks file for redhat-cop.redhat_sso
+- name: Call JBoss EAP Role
+  import_role:
+    name: redhat-cop.jboss_eap
+  vars:
+    jboss_eap_artifact_source: "{{ redhat_sso_artifact_source }}"
+    jboss_eap_patch_artifact_source: "{{ redhat_sso_patch_artifact_source }}"
+    jboss_eap_base_version: "{{ redhat_sso_base_version }}"
+    jboss_eap_home_dir_name: "{{ redhat_sso_home_dir_name }}"
+    jboss_eap_base_directory_name: "{{ redhat_sso_base_directory_name }}"
+    jboss_eap_artifact_name: "{{ redhat_sso_artifact_name }}"
+    jboss_eap_patch_artifact_name: "{{ redhat_sso_patch_artifact_name }}"
