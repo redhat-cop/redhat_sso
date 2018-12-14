@@ -1,2 +1,9 @@
 ---
-# defaults file for redhat-cop.redhat_sso
+
+redhat_sso_artifact_source: https://access.redhat.com/jbossnetwork/restricted/softwareDownload.html?softwareId=55951
+redhat_sso_patch_artifact_source: https://access.redhat.com/jbossnetwork/restricted/softwareDownload.html?softwareId=60781
+redhat_sso_base_version: 7.2
+redhat_sso_home_dir_name: rh-sso-{{ redhat_sso_base_version }}
+redhat_sso_base_directory_name: rh-sso-{{ redhat_sso_base_version }}
+redhat_sso_artifact_name: "rh-sso-{{ redhat_sso_base_version }}.0.GA"
+redhat_sso_patch_artifact_name: "rh-sso-7.2.4-patch.zip"
