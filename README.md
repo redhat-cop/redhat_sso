@@ -15,7 +15,7 @@ Dependencies
 - [redhat-cop.jboss-common](https://github.com/redhat-cop/ansible-role-jboss-common)
 - [redhat-cop.jboss_eap](https://github.com/redhat-cop/jboss_eap)
 
-Our playbooks provide these dependencies in a [common role](https://github.com/redhat-cop/ansible-middleware-playbooks/tree/master/roles/common), but this there is no explicitly ansible dependency to allow end users more options.
+Our playbooks provide these dependencies in a [common role](https://github.com/redhat-cop/ansible-role-jboss-common), but this there is no explicitly ansible dependency to allow end users more options.
 
 Red Hat SSO Instance Customization
 ----------------
