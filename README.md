@@ -1,4 +1,8 @@
-Ansible JBoss EAP Role [![Build Status](https://travis-ci.org/redhat-cop/redhat_sso.svg)](https://travis-ci.org/redhat-cop/redhat_sso)
+# DEPRECATED - This repository is no longer maintained
+
+**Capabilities provided by this repository have migrated to the [ansible-middleware](https://github.com/ansible-middleware) project and specifically the [keycloak](https://github.com/ansible-middleware/keycloak) repository.**
+
+Ansible JBoss SSO Role [![Build Status](https://travis-ci.org/redhat-cop/redhat_sso.svg)](https://travis-ci.org/redhat-cop/redhat_sso)
 =================
 
 A role to install Red Hat Single Sign On on RHEL7. Intended to be used with [JBoss Middleware Playbooks](https://github.com/redhat-cop/ansible-middleware-playbooks)
@@ -7,7 +11,6 @@ Transfer Method
 ------------
 
 This role supports a few different mechanism for transferring the product zip files to the target host. These are documented on [the main playbooks README](https://github.com/redhat-cop/ansible-middleware-playbooks), as the methods are supported across a variety of roles.
-
 
 Dependencies
 ------------
@@ -20,7 +23,7 @@ Our playbooks provide these dependencies in a [common role](https://github.com/r
 Red Hat SSO Instance Customization
 ----------------
 
-Red Hat SSO instances can be customized on a per host/group basis by modifying the `jboss_instance` property. By default, a single standalone instance is deployed with HTTP and Management interfaces exposed to all interfaces. 
+Red Hat SSO instances can be customized on a per host/group basis by modifying the `jboss_instance` property. By default, a single standalone instance is deployed with HTTP and Management interfaces exposed to all interfaces.
 
 ```
 jboss_instances:
@@ -29,8 +32,7 @@ jboss_instances:
 
 There are several ways in which you can customize the JBoss instances as described below.
 
-
-* Create a single instance called _standalone_ which does not publicly expose the Management interface
+- Create a single instance called _standalone_ which does not publicly expose the Management interface
 
 ```
 jboss_instances:
@@ -38,7 +40,7 @@ jboss_instances:
     bind_management_address: 127.0.0.1
 ```
 
-* Create multiple instances on the same machine with a port offset of 100
+- Create multiple instances on the same machine with a port offset of 100
 
 ```
 jboss_instances:
@@ -60,4 +62,4 @@ License
 Authors Information
 ------------------
 
-* [Andrew Block](https://github.com/sabre1041)
+- [Andrew Block](https://github.com/sabre1041)
